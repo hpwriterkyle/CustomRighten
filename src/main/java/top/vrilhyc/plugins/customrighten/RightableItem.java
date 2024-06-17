@@ -70,7 +70,7 @@ public class RightableItem implements Rightable{
         displayNameMap.clear();
         ConfigurationSection configurationSection = PluginInitial.plugin.getConfig().getConfigurationSection("items");
         for(String s:configurationSection.getKeys(false)){
-            new RightableItem(s).register();
+            new RightableItem(s).loadFromData(configurationSection).register();
         }
     }
 }
