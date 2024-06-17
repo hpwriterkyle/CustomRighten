@@ -7,14 +7,15 @@ import org.bukkit.inventory.meta.ItemMeta;
 import top.vrilhyc.plugins.customrighten.tools.CommandBundle;
 import top.vrilhyc.plugins.customrighten.tools.RightenCommandBundle;
 
+import java.util.HashMap;
 import java.util.Map;
 
 public class RightableItem implements Rightable{
     private String name;
     private String displayName;
     protected CommandBundle commandBundle;
-    public static Map<String,RightableItem> primitiveMap;
-    public static Map<String,RightableItem> displayNameMap;
+    public static Map<String,RightableItem> primitiveMap = new HashMap<>();
+    public static Map<String,RightableItem> displayNameMap = new HashMap<>();
 
     public RightableItem(String s){
         this.name = s;
