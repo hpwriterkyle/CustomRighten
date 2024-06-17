@@ -1,0 +1,6 @@
+name: CustomRighten
+version: '${project.version}'
+main: top.vrilhyc.plugins.customrighten.CustomRighten
+api-version: '1.19'
+commands:
+  customrighten:

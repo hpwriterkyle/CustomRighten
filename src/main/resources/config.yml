@@ -1,0 +1,11 @@
+#just config
+items:
+  a:
+    name: "&a名字"
+    commands:
+      - say %player%传送到了0 100 0
+      - tp %player% 0 100 0
+  b:
+    name: "&aaaa"
+    commands:
+      - say %player%
