@@ -26,7 +26,6 @@ public class MainListener implements Listener {
         if (!(e.getEntity() instanceof Player)){
             return;
         }
-        System.out.println("死啦");
         Player dier = (Player)e.getEntity();
         dier.setHealth(dier.getMaxHealth());
         new Thread(() -> {
